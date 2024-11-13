@@ -23,7 +23,7 @@ endif()
 
 if(CMAKE_BUILD_TYPE STREQUAL "Debug")
     set(CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -Wall -Werror -Wextra -pedantic -g -fsanitize=undefined -fno-sanitize-recover=all -fsanitize=float-divide-by-zero -fsanitize=float-cast-overflow -fno-sanitize=null -fno-sanitize=alignment -fsanitize=leak -fsanitize=address")
-    add_definitions(-DDEBUG)
+    add_compile_definitions(DEBUG)
 endif()
 
 option(VALGRIND "Build with Valgrind support" 0)

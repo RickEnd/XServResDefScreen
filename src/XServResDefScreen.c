@@ -13,7 +13,7 @@
 
 int main(void)
 {
-#if DEBUG
+#ifdef DEBUG
     printf("Debug version\n");
 #endif
     Display *dpy = XOpenDisplay(NULL);
@@ -73,11 +73,11 @@ void DisplayChangeRes(Display *dpy, int screen_num, Window root_window)
                                       CurrentTime);
     }
 
-    // for (int i = 0; i < 64; i++)
-    // {
-    //     free(pos_freq[i]);
-    // }
-    // free(pos_freq);
+    for (int i = 0; i < 64; i++)
+    {
+        free(pos_freq[i]);
+    }
+    free(pos_freq);
     XFree(conf);
     XCloseDisplay(dpy);
 }
