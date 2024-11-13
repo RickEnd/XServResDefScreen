@@ -16,6 +16,3 @@ Linter (clang-format):
         clang-format -n *.c
     Format:
         clang-format -i *.c
-
-Sanitizer:
-    В файле CMakeLists.txt закомментировать 7 строку и раскомментировать 8 строку и пересобрать проект
