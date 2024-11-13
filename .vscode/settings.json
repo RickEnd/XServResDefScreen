@@ -1,9 +1,0 @@
-{
-    "files.associations": {
-        "xrandr.h": "c",
-        "xlib.h": "c",
-        "unistd.h": "c",
-        "xservresdefscreen.h": "c"
-    },
-    "C_Cpp.errorSquiggles": "disabled"
-}
